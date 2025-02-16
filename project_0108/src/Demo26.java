@@ -17,6 +17,7 @@ public class Demo26 {
         StringBuilder str1 = new StringBuilder();
         Scanner scanner = new Scanner(System.in);
         String str2 = scanner.next();
+        scanner.close();
         str1.append(str2);
         str1.reverse();
         if( str2.equals(    str1.toString() )    )
