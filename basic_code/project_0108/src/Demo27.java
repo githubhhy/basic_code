@@ -4,6 +4,7 @@ public class Demo27 {
         String str = arrToString(arr);
         System.out.println(str);
         System.out.println("hello");
+        System.out.println("world");
     }
     public static String arrToString(int[] arr) {
         StringBuilder sb = new StringBuilder();
