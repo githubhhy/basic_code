@@ -3,8 +3,6 @@ public class Demo27 {
         int[] arr = {1,2,3};
         String str = arrToString(arr);
         System.out.println(str);
-        System.out.println("hello");
-        System.out.println("world");
     }
     public static String arrToString(int[] arr) {
         StringBuilder sb = new StringBuilder();

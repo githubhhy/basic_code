@@ -1,5 +1,4 @@
 package Demo21;
-import Demo21.Role;
 
 public class Demo21 {
     public static void main(String[] args) {

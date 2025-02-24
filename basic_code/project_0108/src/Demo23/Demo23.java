@@ -1,6 +1,5 @@
 package Dome23;
 
-import java.util.Random;
 
 public class Demo23 {
     public static void main(String[] args) {

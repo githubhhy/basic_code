@@ -18,6 +18,7 @@ import java.util.Scanner;
             array[i].setPrice(scanner.nextInt());
             array[i].setColor(scanner.next());
         }
+        scanner.close();
         System.out.println("展示： ");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i].getBrand()+", "
