@@ -15,6 +15,20 @@ public class Demo40 {
         //运行时，java，实际调用的右边子类里的成员方法
         a.show();
 
+        //多态的弊端：不能调用子类的特有功能, a.lookHome();会报错
+        //解决方案，强制转换回子类的类型就可以了
+        Dog d = (Dog)a;
+        d.lookHome();
+
+
+        // if (a instanceof Dog) {
+        //     Dog d = (Dog)a;
+        //     d.lookHome();
+        // }else if (a instanceof Cat) {
+        //     Cat c = (Cat)a;
+        // } else{
+        //     System.out.println("转换失败");
+        // }
     }
     
 }
@@ -32,6 +46,10 @@ class Dog extends Animal {
     @Override
     public void show() {
         System.out.println("Dog__show方法");
+    }
+
+    public void lookHome(){
+        System.out.println("狗看家");
     }
 }
 
