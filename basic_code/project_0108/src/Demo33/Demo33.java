@@ -5,12 +5,20 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Demo33 {
+    static ArrayList<User> userlist = new ArrayList<>();
+    static ArrayList<Student> list = new ArrayList<>();
+    //添加一个默认的后台系统管理员
+    static{
+        User admin = new User("admin", "admin", "111111111111111111", "11111111111");
+        userlist.add(admin);
+    }
+
     public static void main(String[] args) {
-        ArrayList<User> userlist = new ArrayList<>();
+        /* ArrayList<User> userlist = new ArrayList<>();
         ArrayList<Student> list = new ArrayList<>();
         //添加一个默认的后台系统管理员
         User admin = new User("admin", "admin", "111111111111111111", "11111111111");
-        userlist.add(admin);
+        userlist.add(admin); */
 
         page1:while (true) {
             System.out.println("-----------欢迎来到学生管理系统-----------");
@@ -36,8 +44,9 @@ public class Demo33 {
                     break;
             }
         }
-
-        //上一个demo的代码：未升级的系统
+        Demo32 ss = new Demo32();
+        ss.studentSystem(null);
+        /* //上一个demo的代码：未升级的系统
         page2 : while (true) {
             System.out.println("-----------欢迎来到学生管理系统-----------");
             System.out.println("1: 添加学生");
@@ -63,7 +72,7 @@ public class Demo33 {
                             break page2;}
                 default : System.out.println("没有这个选项");
             }
-        }
+        } */
         
     }
     //注册的相关函数
