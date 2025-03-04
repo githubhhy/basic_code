@@ -1,5 +1,4 @@
-package Dome23;
-
+package Demo23;
 
 public class Demo23 {
     public static void main(String[] args) {

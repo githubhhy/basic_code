@@ -1,4 +1,4 @@
-package Dome23;
+package Demo23;
 
 public class Student {
     private String id;
