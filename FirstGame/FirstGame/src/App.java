@@ -7,8 +7,8 @@ public class App {
         System.out.println("Hello, World!");
         
         //
-        new LoginJFrame();
-        new RegisterjFrame();
+        // new LoginJFrame();
+        // new RegisterjFrame();
         new GameJFrame();
     }
 }
