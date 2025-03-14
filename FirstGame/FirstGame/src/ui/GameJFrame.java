@@ -2,7 +2,9 @@ package ui;
 
 import java.util.Random;
 
+import javax.management.JMRuntimeException;
 import javax.swing.ImageIcon;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -11,13 +13,29 @@ import javax.swing.JMenuItem;
 import javax.swing.WindowConstants;
 import javax.swing.border.BevelBorder;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class GameJFrame extends JFrame implements KeyListener {
+public class GameJFrame extends JFrame implements KeyListener,ActionListener {
     int[][] num = new int[4][4];
     int x;
     int y;
+    int step = 0;
+
+    String path = "FirstGame\\image\\animal\\animal3\\";
+    String winpath = "FirstGame\\image\\win.png";
+    String backgroundpath = "FirstGame\\image\\background.png";
+    String gzhpath = "FirstGame\\image\\about.png";
+
+    JMenuItem replaygameItem = new JMenuItem("重新游戏");
+    JMenuItem reloginItem = new JMenuItem("重新登录");
+    JMenuItem closeItem = new JMenuItem("关闭游戏");
+    JMenuItem gzhItem = new JMenuItem("公众号");
+    JMenuItem meinv = new JMenuItem("美女");
+    JMenuItem animal = new JMenuItem("动物");
+    JMenuItem sport = new JMenuItem("运动");
 
     // 表示游戏主界面，跟游戏相关逻辑在此处
     public GameJFrame() {
@@ -32,7 +50,7 @@ public class GameJFrame extends JFrame implements KeyListener {
 
         // 添加按键监听
         this.addKeyListener(this);
-
+        
         this.setVisible(true); // 界面可视
     }
 
@@ -51,10 +69,27 @@ public class GameJFrame extends JFrame implements KeyListener {
         JMenu functionJmenu = new JMenu("功能");
         JMenu aboutJmenu = new JMenu("关于我们");
 
-        JMenuItem replaygameItem = new JMenuItem("重新游戏");
-        JMenuItem reloginItem = new JMenuItem("重新登录");
-        JMenuItem closeItem = new JMenuItem("关闭游戏");
-        JMenuItem gzhItem = new JMenuItem("公众号");
+        // JMenuItem replaygameItem = new JMenuItem("重新游戏");
+        // JMenuItem reloginItem = new JMenuItem("重新登录");
+        // JMenuItem closeItem = new JMenuItem("关闭游戏");
+        // JMenuItem gzhItem = new JMenuItem("公众号");
+
+        JMenu changeImage = new JMenu("更换图片");
+
+
+        replaygameItem.addActionListener(this);
+        reloginItem.addActionListener(this);
+        closeItem.addActionListener(this);
+        gzhItem.addActionListener(this);
+        meinv.addActionListener(this);
+        animal.addActionListener(this);
+        sport.addActionListener(this);
+
+
+        changeImage.add(meinv);
+        changeImage.add(animal);
+        changeImage.add(sport);
+        functionJmenu.add(changeImage);
 
         functionJmenu.add(replaygameItem);
         functionJmenu.add(reloginItem);
@@ -94,17 +129,22 @@ public class GameJFrame extends JFrame implements KeyListener {
 
         //胜利，显示祝贺图
         if (cheakWin()) {
-            JLabel win = new JLabel(new ImageIcon("FirstGame\\image\\win.png"));
+            JLabel win = new JLabel(new ImageIcon(winpath));
             win.setBounds(203, 283, 197, 73);
             this.getContentPane().add(win);
         }
+
+        JLabel setpJLabel = new JLabel("步数："+ step);
+        setpJLabel.setBounds(50, 30, 100, 20);
+        this.getContentPane().add(setpJLabel);
+
 
         // 放置
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 // 创建JLable对象（即管理容器）
                 JLabel jLabel = new JLabel(
-                        new ImageIcon("FirstGame\\image\\animal\\animal3\\" + num[i][j] + ".jpg"));// 创建ImageIcon对象
+                        new ImageIcon(path + num[i][j] + ".jpg"));// 创建ImageIcon对象
 
                 // 指定位置
                 jLabel.setBounds(105 * j + 83, 105 * i + 134, 105, 105);
@@ -116,7 +156,7 @@ public class GameJFrame extends JFrame implements KeyListener {
         }
 
         // 添加背景图片
-        JLabel background = new JLabel(new ImageIcon("FirstGame\\image\\background.png"));
+        JLabel background = new JLabel(new ImageIcon(backgroundpath));
         background.setBounds(40, 40, 508, 560);
         this.getContentPane().add(background);
 
@@ -133,12 +173,12 @@ public class GameJFrame extends JFrame implements KeyListener {
         if (a == 65) {
             System.out.println("a:查看原图");
             this.getContentPane().removeAll();
-            JLabel allimage = new JLabel(new ImageIcon("FirstGame\\image\\animal\\animal3\\all.jpg"));
+            JLabel allimage = new JLabel(new ImageIcon(path + "all.jpg"));
             allimage.setBounds(83, 134, 420, 420);
             this.getContentPane().add(allimage);
         }
         // 添加背景图片
-        JLabel background = new JLabel(new ImageIcon("FirstGame\\image\\background.png"));
+        JLabel background = new JLabel(new ImageIcon(backgroundpath));
         background.setBounds(40, 40, 508, 560);
         this.getContentPane().add(background);
 
@@ -162,6 +202,7 @@ public class GameJFrame extends JFrame implements KeyListener {
                 num[x][y] = num[x][y + 1];
                 num[x][y + 1] = 0;
                 y = y + 1;
+                step++;
                 break;
             case 38:
                 System.out.println("上");
@@ -171,6 +212,7 @@ public class GameJFrame extends JFrame implements KeyListener {
                 num[x][y] = num[x + 1][y];
                 num[x + 1][y] = 0;
                 x = x + 1;
+                step++;
                 break;
             case 39:
                 System.out.println("右");
@@ -180,6 +222,7 @@ public class GameJFrame extends JFrame implements KeyListener {
                 num[x][y] = num[x][y - 1];
                 num[x][y - 1] = 0;
                 y = y - 1;
+                step++;
                 break;
             case 40:
                 System.out.println("下");
@@ -189,6 +232,7 @@ public class GameJFrame extends JFrame implements KeyListener {
                 num[x][y] = num[x - 1][y];
                 num[x - 1][y] = 0;
                 x = x - 1;
+                step++;
                 break;
             case 65:
                 System.out.println("a:取消查看");
@@ -228,5 +272,56 @@ public class GameJFrame extends JFrame implements KeyListener {
                 { 13, 14, 15, 0 }
         };
         initImage();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        Object object = e.getSource();
+        if (object == replaygameItem) {
+            System.out.println("重新游戏");
+            initArray();
+            step = 0;
+            initImage();
+        } else if (object == reloginItem) {
+            System.out.println("重新登录");
+            //关闭现在界面
+            this.setVisible(false);
+            //打开登录界面
+            new LoginJFrame();
+        } else if (object == closeItem) {
+            System.out.println("关闭游戏");
+            System.exit(0);
+        } else if (object == gzhItem) {
+            System.out.println("公众号");
+            JDialog jDialog = new JDialog();
+            JLabel gzh = new JLabel(new ImageIcon(gzhpath));
+            gzh.setBounds(0, 0, 258, 258);
+            jDialog.getContentPane().add(gzh);
+            jDialog.setSize(344, 344);
+            jDialog.setAlwaysOnTop(true);
+            jDialog.setLocationRelativeTo(null);
+            //弹框不关闭，下方界面无法操作
+            jDialog.setModal(true);
+            jDialog.setVisible(true);
+        } else if (object == meinv) {
+            System.out.println("更换图片:美女");
+            Random random = new Random();
+            path = "FirstGame\\image\\girl\\girl"+(random.nextInt(13)+1)+"\\";
+            initArray();
+            initImage();
+        } else if (object == animal) {
+            System.out.println("更换图片:动物");
+            Random random = new Random();
+            path = "FirstGame\\image\\animal\\animal"+(random.nextInt(8)+1)+"\\";
+            initArray();
+            initImage();
+        } else if (object == sport) {
+            System.out.println("更换图片:运动");
+            Random random = new Random();
+            path = "FirstGame\\image\\sport\\sport"+(random.nextInt(10)+1)+"\\";
+            initArray();
+            initImage();
+        }
+
     }
 }
