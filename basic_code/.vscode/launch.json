@@ -1,0 +1,427 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FibonacciSearch",
+            "request": "launch",
+            "mainClass": "Demo54.FibonacciSearch",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "InterpolationSearch",
+            "request": "launch",
+            "mainClass": "Demo54.InterpolationSearch",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Demo1",
+            "request": "launch",
+            "mainClass": "Demo1",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo10",
+            "request": "launch",
+            "mainClass": "Demo10",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo11",
+            "request": "launch",
+            "mainClass": "Demo11",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo12",
+            "request": "launch",
+            "mainClass": "Demo12",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo13",
+            "request": "launch",
+            "mainClass": "Demo13",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo14",
+            "request": "launch",
+            "mainClass": "Demo14",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo15",
+            "request": "launch",
+            "mainClass": "Demo15",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo16",
+            "request": "launch",
+            "mainClass": "Demo16",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo17",
+            "request": "launch",
+            "mainClass": "Demo17",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo18",
+            "request": "launch",
+            "mainClass": "Demo18",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo19",
+            "request": "launch",
+            "mainClass": "Demo19",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo2",
+            "request": "launch",
+            "mainClass": "Demo2",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo20",
+            "request": "launch",
+            "mainClass": "Demo20",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo21",
+            "request": "launch",
+            "mainClass": "Demo21.Demo21",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo22",
+            "request": "launch",
+            "mainClass": "Demo22.Demo22",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo23",
+            "request": "launch",
+            "mainClass": "Demo22.Demo23",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo23(1)",
+            "request": "launch",
+            "mainClass": "Demo23.Demo23",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo24",
+            "request": "launch",
+            "mainClass": "Demo24",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo25",
+            "request": "launch",
+            "mainClass": "Demo25",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo26",
+            "request": "launch",
+            "mainClass": "Demo26",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo27",
+            "request": "launch",
+            "mainClass": "Demo27",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo28",
+            "request": "launch",
+            "mainClass": "Demo28",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo29",
+            "request": "launch",
+            "mainClass": "Demo29",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo3",
+            "request": "launch",
+            "mainClass": "Demo3",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo30",
+            "request": "launch",
+            "mainClass": "Demo30",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo31",
+            "request": "launch",
+            "mainClass": "Demo31.Demo31",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo32",
+            "request": "launch",
+            "mainClass": "Demo32.Demo32",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo33",
+            "request": "launch",
+            "mainClass": "Demo33.Demo33",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo34",
+            "request": "launch",
+            "mainClass": "Demo34.Demo34",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo35",
+            "request": "launch",
+            "mainClass": "Demo35.Demo35",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo36",
+            "request": "launch",
+            "mainClass": "Demo36.Demo36",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo37",
+            "request": "launch",
+            "mainClass": "Demo37.Demo37",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo38",
+            "request": "launch",
+            "mainClass": "Demo38.Demo38",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo39",
+            "request": "launch",
+            "mainClass": "Demo39.Demo39",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo4",
+            "request": "launch",
+            "mainClass": "Demo4",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo40",
+            "request": "launch",
+            "mainClass": "Demo40.Demo40",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo41",
+            "request": "launch",
+            "mainClass": "Demo41.Demo41",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo42",
+            "request": "launch",
+            "mainClass": "Demo42.Demo42",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo43",
+            "request": "launch",
+            "mainClass": "Demo43.Demo43",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo44",
+            "request": "launch",
+            "mainClass": "Demo44.Demo44",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo45",
+            "request": "launch",
+            "mainClass": "Demo45.Demo45",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo46",
+            "request": "launch",
+            "mainClass": "Demo46.Demo46",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo48",
+            "request": "launch",
+            "mainClass": "Demo48.Demo48",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo49",
+            "request": "launch",
+            "mainClass": "Demo49.Demo49",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo5",
+            "request": "launch",
+            "mainClass": "Demo5",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "RuntimeDemo1",
+            "request": "launch",
+            "mainClass": "Demo50.RuntimeDemo1",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo51",
+            "request": "launch",
+            "mainClass": "Demo51.Demo51",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo52",
+            "request": "launch",
+            "mainClass": "Demo52.Demo52",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo53",
+            "request": "launch",
+            "mainClass": "Demo53.Demo53",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "BasicSearch",
+            "request": "launch",
+            "mainClass": "Demo54.BasicSearch",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "Demo54.BinarySearch",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo6",
+            "request": "launch",
+            "mainClass": "Demo6",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo7",
+            "request": "launch",
+            "mainClass": "Demo7",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo8",
+            "request": "launch",
+            "mainClass": "Demo8",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "Demo9",
+            "request": "launch",
+            "mainClass": "Demo9",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "arthmeticoperator",
+            "request": "launch",
+            "mainClass": "arthmeticoperator",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "arthmeticoperatorDemo",
+            "request": "launch",
+            "mainClass": "arthmeticoperatorDemo",
+            "projectName": "basic_code_60d6fdd2"
+        }
+    ]
+}
