@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BlockSearch",
+            "request": "launch",
+            "mainClass": "Demo54.BlockSearch",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
             "name": "FibonacciSearch",
             "request": "launch",
             "mainClass": "Demo54.FibonacciSearch",
