@@ -19,7 +19,7 @@ public class BlockSearch {
 
         // 定义数组管理三个对象（索引表）
         Block[] blockarr = { b1, b2, b3 };
-        int target = 37;
+        int target = 34;
         int index = getIndex(blockarr, arr,target);
         System.out.println(index);
 
@@ -28,7 +28,7 @@ public class BlockSearch {
     private static int getIndex(Block[] blockarr, int[]arr,int target){
         int suoyin = findblock(blockarr, target);
         if (suoyin != -1) {
-            for (int i = blockarr[suoyin].getStartIndex(); i < blockarr[suoyin].getEndIndex(); i++) {
+            for (int i = blockarr[suoyin].getStartIndex(); i <= blockarr[suoyin].getEndIndex(); i++) {
                 if (arr[i] == target) {
                     return i;
                 }else {

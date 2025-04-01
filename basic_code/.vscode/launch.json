@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SelectSort",
+            "request": "launch",
+            "mainClass": "Demo55.SelectSort",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "Demo55.BubbleSort",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
+            "name": "BlockSearch_extend",
+            "request": "launch",
+            "mainClass": "Demo54.BlockSearch_extend",
+            "projectName": "basic_code_60d6fdd2"
+        },
+        {
+            "type": "java",
             "name": "BlockSearch",
             "request": "launch",
             "mainClass": "Demo54.BlockSearch",
